@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# Google Auth
+crawler/token.pickle
+crawler/credentials.json
+crawler/service-account.json
+
+# Environment files
+.env
+*.env
+
+# Database
+database/postgres_data/
+database/pgadmin_data/
+
+# Logs
+*.log
+crawler_errors.log
+crawler_state.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp

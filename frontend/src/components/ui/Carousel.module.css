@@ -1,0 +1,105 @@
+/* Carousel Components Styles */
+
+/* Container */
+.carouselContainer {
+  background-color: var(--bg-secondary);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Title */
+.carouselTitle {
+  margin: 0 0 var(--spacing-md) 0;
+  font-size: var(--heading-h2-size);
+  font-weight: var(--heading-h2-weight);
+  color: var(--text-primary);
+}
+
+/* Loading state */
+.loadingGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--spacing-md);
+}
+
+.loadingCard {
+  background-color: var(--bg-tertiary);
+  border-radius: var(--border-radius-md);
+  height: 200px;
+  animation: pulse 2s infinite;
+}
+
+/* Carousel content */
+.carouselContent {
+  position: relative;
+}
+
+/* Navigation buttons */
+.navButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: var(--border-radius-sm);
+  width: 50px;
+  height: 100px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity var(--transition-normal);
+  z-index: 10;
+}
+
+.navButton:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navButtonPrevious {
+  left: -40px;
+}
+
+.navButtonNext {
+  right: -40px;
+}
+
+.navIcon {
+  transform: scale(1.5);
+}
+
+/* Movies grid */
+.moviesGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--spacing-md);
+  position: relative;
+}
+
+.movieWrapper {
+  animation: slideIn var(--transition-normal) ease-out;
+  animation-fill-mode: both;
+}
+
+/* Animations */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}

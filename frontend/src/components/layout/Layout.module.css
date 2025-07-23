@@ -1,0 +1,137 @@
+.container {
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-family);
+}
+
+.nav {
+  padding: 16px 32px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  background-color: var(--bg-secondary);
+  box-shadow: var(--shadow-sm);
+  border-bottom-color: var(--border-primary);
+}
+
+.navContent {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-xl);
+}
+
+.navLeft {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xl);
+}
+
+.title {
+  margin: 0;
+  cursor: pointer;
+  font-size: var(--heading-h2-size);
+  font-weight: var(--heading-h2-weight);
+  color: var(--text-primary);
+}
+
+.titleHighlight {
+  color: var(--critical-primary);
+}
+
+.searchForm {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.searchIcon {
+  position: absolute;
+  pointer-events: none;
+  left: var(--spacing-sm);
+}
+
+.searchInput {
+  padding: 8px 40px;
+  border-width: 1px;
+  border-style: solid;
+  width: 300px;
+  outline: none;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  border-color: var(--border-primary);
+  font-size: var(--body-regular-size);
+  border-radius: var(--border-radius-sm);
+  transition: border-color var(--transition-normal);
+}
+
+.searchInput:focus {
+  border-color: var(--accent-primary);
+}
+
+.clearIcon {
+  position: absolute;
+  opacity: 0.7;
+  cursor: pointer;
+  right: var(--spacing-sm);
+  transition: opacity var(--transition-fast);
+}
+
+.clearIcon:hover {
+  opacity: 1;
+}
+
+.navLinks {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.navLink {
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  color: var(--text-secondary);
+  font-size: var(--body-regular-size);
+  transition: color var(--transition-fast);
+}
+
+.navLink:hover {
+  color: var(--text-primary);
+}
+
+.navLinkActive {
+  font-weight: 500;
+  border-bottom-color: var(--critical-primary);
+  color: var(--text-primary);
+}
+
+.addButton {
+  border: none;
+  padding: 8px 24px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background-color: var(--critical-primary);
+  color: var(--text-primary);
+  border-radius: var(--border-radius-sm);
+  font-size: var(--body-regular-size);
+  transition: background-color var(--transition-normal);
+}
+
+.addButton:hover {
+  background-color: var(--critical-hover);
+}
+
+.main {
+  width: 100%;
+  margin: 0;
+  padding: 32px;
+}

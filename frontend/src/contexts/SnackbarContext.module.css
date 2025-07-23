@@ -1,0 +1,68 @@
+.snackbar {
+  position: fixed;
+  bottom: var(--spacing-xl);
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--text-primary);
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  min-width: 300px;
+  max-width: 600px;
+  font-size: var(--body-regular-size);
+  font-weight: 500;
+  z-index: 9999;
+}
+
+.snackbar.visible {
+  animation: slideUp 0.3s ease-out;
+}
+
+.snackbar.hidden {
+  animation: slideDown 0.3s ease-out;
+}
+
+.snackbar.success {
+  background-color: var(--status-success);
+}
+
+.snackbar.error {
+  background-color: var(--status-error);
+}
+
+.snackbar.warning {
+  background-color: var(--status-warning);
+}
+
+.snackbar.info {
+  background-color: var(--status-info);
+}
+
+.icon {
+  font-size: 1.25rem;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateX(-50%) translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-50%) translateY(100%);
+    opacity: 0;
+  }
+}

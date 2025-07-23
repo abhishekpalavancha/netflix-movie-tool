@@ -1,0 +1,137 @@
+/* MovieCard CSS Module */
+
+/* List View Styles */
+.listItem {
+  background-color: var(--bg-secondary);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  border: 1px solid var(--border-primary);
+}
+
+.listItem:hover {
+  background-color: var(--bg-tertiary);
+  transform: translateX(4px);
+  border-color: var(--critical-primary);
+}
+
+.listContent {
+  display: flex;
+  gap: var(--spacing-xl);
+  align-items: center;
+  flex: 1;
+}
+
+.listTitle {
+  min-width: 200px;
+}
+
+.listTitle h3 {
+  margin: 0;
+  font-size: var(--body-regular-size);
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.listMeta {
+  display: flex;
+  gap: var(--spacing-xl);
+  color: var(--text-secondary);
+}
+
+.listRating {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.listRating.highRating {
+  color: var(--status-success);
+}
+
+.listRating span {
+  font-weight: 500;
+}
+
+/* Grid View Styles */
+.gridItem {
+  background-color: var(--bg-secondary);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-lg);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-primary);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.gridItem:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--critical-primary);
+}
+
+.gridTitle {
+  margin: 0 0 var(--spacing-md) 0;
+  font-size: var(--heading-h3-size);
+  font-weight: var(--heading-h3-weight);
+  color: var(--text-primary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.gridMeta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+  flex: 1;
+}
+
+.metaRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.metaLabel {
+  color: var(--text-secondary);
+  font-size: var(--body-small-size);
+}
+
+.metaValue {
+  color: var(--text-primary);
+  font-size: var(--body-regular-size);
+}
+
+.gridFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--border-primary);
+}
+
+.gridRating {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  color: var(--text-primary);
+}
+
+.gridRating.highRating {
+  color: var(--status-success);
+}
+
+.ratingValue {
+  font-size: var(--body-large-size);
+  font-weight: 600;
+}

@@ -1,0 +1,100 @@
+/* Chart Components Styles */
+
+/* Common chart container */
+.chartContainer {
+  background-color: var(--bg-secondary);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-md);
+}
+
+/* Loading state */
+.loadingContainer {
+  background-color: var(--bg-secondary);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-xl);
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loadingText {
+  color: var(--text-secondary);
+  font-size: var(--body-regular-size);
+}
+
+/* Chart title */
+.chartTitle {
+  margin: 0 0 var(--spacing-md) 0;
+  font-size: var(--heading-h3-size);
+  color: var(--text-primary);
+}
+
+/* YearLineChart specific styles */
+.yearChartTitle {
+  margin: 0 0 16px 0;
+  font-size: var(--heading-h3-size);
+  color: var(--text-primary);
+}
+
+/* GenresBarChart specific styles */
+.genresChartTitle {
+  margin: 0 0 24px 0;
+  font-size: var(--heading-h3-size);
+  color: var(--text-primary);
+}
+
+.genresList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 12px;
+}
+
+.genreItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.genreName {
+  width: 100px;
+  text-align: right;
+  color: #999;
+  font-size: 14px;
+}
+
+.genreBarContainer {
+  flex: 1;
+  height: 24px;
+  background-color: #2a2a2a;
+  border-radius: var(--border-radius-sm);
+  overflow: hidden;
+}
+
+.genreBar {
+  height: 100%;
+  background-color: var(--critical-primary);
+  transition: width var(--transition-slow);
+}
+
+.genreCount {
+  margin-left: 12px;
+  color: var(--text-primary);
+  min-width: 50px;
+  font-size: 14px;
+}
+
+/* Recharts style overrides */
+:global(.recharts-wrapper .recharts-surface) {
+  outline: none !important;
+}
+
+:global(.recharts-cartesian-axis-line) {
+  display: none !important;
+}
+
+:global(.recharts-rectangle) {
+  stroke: none !important;
+}

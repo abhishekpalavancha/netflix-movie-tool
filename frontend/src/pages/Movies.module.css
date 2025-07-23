@@ -1,0 +1,166 @@
+.container {
+  /* No specific styles, using default */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.title {
+  margin: 0;
+  font-size: var(--heading-h1-font-size);
+  font-weight: var(--heading-h1-font-weight);
+  color: var(--text-primary);
+}
+
+.viewControls {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.viewButton {
+  color: var(--text-primary);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--border-radius-sm);
+  padding: var(--spacing-sm) var(--spacing-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  background-color: transparent;
+}
+
+.viewButton:hover {
+  border-color: var(--critical-primary);
+}
+
+.viewButtonActive {
+  background-color: var(--background-tertiary);
+}
+
+.filters {
+  background-color: var(--background-secondary);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+  display: flex;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+.filterGroup {
+  flex: 1;
+  min-width: 200px;
+}
+
+.filterLabel {
+  display: block;
+  margin-bottom: var(--spacing-xs);
+  color: var(--text-secondary);
+  font-size: var(--body-small-font-size);
+}
+
+.loadingGrid {
+  display: grid;
+  gap: var(--spacing-lg);
+}
+
+.loadingGridView {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.loadingListView {
+  grid-template-columns: 1fr;
+  gap: var(--spacing-sm);
+}
+
+.loadingSkeleton {
+  background-color: var(--background-secondary);
+  border-radius: var(--border-radius-md);
+  animation: pulse 2s infinite;
+}
+
+.loadingSkeletonGrid {
+  padding: var(--spacing-lg);
+  height: 200px;
+}
+
+.loadingSkeletonList {
+  padding: var(--spacing-md);
+  height: 60px;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.emptyState {
+  text-align: center;
+  padding: var(--spacing-xl) var(--spacing-lg);
+  background-color: var(--background-secondary);
+  border-radius: var(--border-radius-md);
+}
+
+.emptyStateTitle {
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-md);
+}
+
+.emptyStateText {
+  color: var(--text-secondary);
+}
+
+.moviesGrid {
+  display: grid;
+  gap: var(--spacing-md);
+}
+
+.moviesGridView {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.moviesListView {
+  grid-template-columns: 1fr;
+  gap: var(--spacing-xs);
+}
+
+.loadMoreContainer {
+  text-align: center;
+  margin-top: var(--spacing-lg);
+}
+
+.loadMoreButton {
+  background-color: var(--critical-primary);
+  color: var(--text-primary);
+  border: none;
+  border-radius: var(--border-radius-sm);
+  padding: var(--spacing-md) var(--spacing-xl);
+  font-size: var(--body-regular-font-size);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+}
+
+.loadMoreButton:hover {
+  background-color: var(--critical-hover);
+  border: 1px solid var(--critical-primary);
+}
+
+.loadMoreButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.loadMoreButton:disabled:hover {
+  background-color: var(--critical-primary);
+  border: none;
+}

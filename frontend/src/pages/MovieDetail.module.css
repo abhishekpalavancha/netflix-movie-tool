@@ -1,0 +1,171 @@
+/* MovieDetail Component Styles */
+
+/* Loading state */
+.loadingContainer {
+  background-color: var(--bg-secondary);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-xl);
+  min-height: 400px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Back button */
+.backButton {
+  background-color: transparent;
+  color: var(--text-secondary);
+  border: none;
+  cursor: pointer;
+  margin-bottom: var(--spacing-lg);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  font-size: var(--body-regular-size);
+  transition: color var(--transition-fast);
+}
+
+.backButton:hover {
+  color: var(--text-primary);
+}
+
+/* Main container */
+.container {
+  background-color: var(--bg-secondary);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+/* Header section */
+.header {
+  padding: var(--spacing-xl);
+  border-bottom: 1px solid var(--border-primary);
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--spacing-md);
+}
+
+.title {
+  margin: 0;
+  font-size: var(--heading-h1-size);
+  font-weight: var(--heading-h1-weight);
+  color: var(--text-primary);
+}
+
+.ratingBadge {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius-sm);
+}
+
+.ratingBadgeHighRated {
+  background-color: var(--status-success);
+}
+
+.ratingBadgeNormal {
+  background-color: var(--bg-tertiary);
+}
+
+.ratingValue {
+  font-size: var(--body-large-size);
+  font-weight: 600;
+}
+
+.metadata {
+  display: flex;
+  gap: var(--spacing-lg);
+  color: var(--text-secondary);
+  font-size: var(--body-regular-size);
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  border-bottom: 1px solid var(--border-primary);
+}
+
+.tab {
+  background-color: transparent;
+  border: none;
+  padding: var(--spacing-md) var(--spacing-lg);
+  font-size: var(--body-regular-size);
+  cursor: pointer;
+  position: relative;
+  transition: color var(--transition-fast);
+}
+
+.tabActive {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.tabInactive {
+  color: var(--text-secondary);
+  font-weight: 400;
+}
+
+.tabIndicator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--critical-primary);
+}
+
+/* Tab content */
+.tabContent {
+  padding: var(--spacing-xl);
+}
+
+.detailsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-xl);
+}
+
+.fileInfoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.detailItem h3,
+.detailItem h4 {
+  margin: 0 0 var(--spacing-sm) 0;
+  color: var(--text-secondary);
+  font-size: var(--label-size);
+  font-weight: var(--label-weight);
+  text-transform: uppercase;
+  letter-spacing: var(--label-letter-spacing);
+}
+
+.detailItem p {
+  margin: 0;
+  font-size: var(--body-regular-size);
+  color: var(--text-primary);
+}
+
+.movieId {
+  margin: 0;
+  font-size: var(--body-small-size);
+  color: var(--text-secondary);
+  font-family: monospace;
+}

@@ -1,0 +1,14 @@
+/* Shared icon styles */
+
+.clickableIcon {
+  cursor: pointer;
+}
+
+.defaultIcon {
+  cursor: default;
+}
+
+.starIcon {
+  margin-right: 4px;
+  vertical-align: middle;
+}

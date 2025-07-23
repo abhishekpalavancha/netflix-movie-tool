@@ -1,0 +1,78 @@
+/* CSS Variables based on theme.ts */
+:root {
+  /* Colors */
+  --bg-primary: #121212;
+  --bg-secondary: #1e1e1e;
+  --bg-tertiary: #2e2e2e;
+  
+  --critical-primary: #E50914;
+  --critical-hover: #F40612;
+  --critical-muted: #831010;
+  
+  --text-primary: #ffffff;
+  --text-secondary: #9e9e9e;
+  --text-disabled: #5e5e5e;
+  
+  --accent-primary: #E50914;
+  --accent-secondary: #E50914;
+  
+  --status-success: #4caf50;
+  --status-warning: #ff9800;
+  --status-error: #ff6b6b;
+  --status-info: #2196f3;
+  
+  --border-primary: #333333;
+  --border-secondary: #444444;
+  
+  /* Typography */
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  --heading-h1-size: 2rem;
+  --heading-h1-weight: 600;
+  --heading-h1-line-height: 1.2;
+  
+  --heading-h2-size: 1.5rem;
+  --heading-h2-weight: 600;
+  --heading-h2-line-height: 1.3;
+  
+  --heading-h3-size: 1.25rem;
+  --heading-h3-weight: 500;
+  --heading-h3-line-height: 1.4;
+  
+  --body-large-size: 1.125rem;
+  --body-large-line-height: 1.5;
+  
+  --body-regular-size: 1rem;
+  --body-regular-line-height: 1.5;
+  
+  --body-small-size: 0.875rem;
+  --body-small-line-height: 1.5;
+  
+  --label-size: 0.875rem;
+  --label-weight: 500;
+  --label-letter-spacing: 0.05em;
+  
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-xxl: 3rem;
+  
+  /* Border Radius */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  --border-radius-full: 9999px;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.4);
+  
+  /* Transitions */
+  --transition-fast: 150ms ease-in-out;
+  --transition-normal: 200ms ease-in-out;
+  --transition-slow: 300ms ease-in-out;
+}
